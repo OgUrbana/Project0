@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Search</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Project0</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="image.html">Image Search</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="advanced.html"Advanced Search <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form action="https://google.com/search">
+            <input type="text" name="q"> <!-- All these words-->
+            <input type="text" name="as_epq"> <!-- this sexact word or phrase-->
+            <input type="text" name="as_oq"> <!--any of these words-->
+            <input type="text" name="as_eq"> <!--none of these words-->
+            
+        <!--https://www.google.com/search?as_q=test&as_epq=test2&as_oq=test3&as_eq=test4&as_nlo=1&as_nhi=10
+            &lr=lang_en&cr=countryUS&as_qdr=d&as_sitesearch=test.org&as_occt=any&safe=images&as_filetype=&tbs=-->
+            <input type="submit" value="Google Search">
+        </form>
+    </body>
+</html>
