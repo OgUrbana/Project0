@@ -13,7 +13,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -26,9 +26,18 @@
                 </ul>
             </div>
         </nav>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <div class="container-sm text-center">
+            <form action="https://google.com/search">
+                <div class="mb-3">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+                    <input type="text" class="form-control" id="formGoogleSearch" name="q">
+                </div>
+                <div class="d-grid gap-2 d-md-block text-center">
+                    <button type="submit" class="btn btn-primary" value="Google Search">Google Search</button>
+                    <input type="submit" class="btn btn-primary" name="btnI" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
+
     </body>
 </html>

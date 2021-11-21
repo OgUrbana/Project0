@@ -1,9 +1,19 @@
-.btn {
+form {
+  padding: 20px;
+}
+
+h1 {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.btnAuto {
   background-color: #4d90fe;
   color: white;
   margin: auto;
   display: block;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

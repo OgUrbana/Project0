@@ -12,7 +12,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -25,10 +25,15 @@
                 </ul>
             </div>
         </nav>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="hidden" name="tbm" value="isch">
-            <input type="submit" value="Google Image Search">
-        </form>
+        <div class="container-sm text-center">
+            <form action="https://google.com/search">
+                <div class="mb-3">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Images">
+                    <span>Images</span>
+                    <input type="text" class="form-control" id="formGoogleImageSearch" name="q">
+                    <input type="hidden" name="tbm" value="isch">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
