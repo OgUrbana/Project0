@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Search</title>
     </head>
     <body>
@@ -20,20 +21,35 @@
                         <a class="nav-link" href="image.html">Image Search</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="advanced.html"Advanced Search <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="advanced.html">Advanced Search<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <h1 style="text-align: center;">Google Advanced Search</h1>
         <form action="https://google.com/search">
-            <input type="text" name="q"> <!-- All these words-->
-            <input type="text" name="as_epq"> <!-- this sexact word or phrase-->
-            <input type="text" name="as_oq"> <!--any of these words-->
-            <input type="text" name="as_eq"> <!--none of these words-->
-            
+            <div class="container">
+                <div class="mb-3">
+                    <label for="formAllWordsInput" class="form-label">All these words:</label>
+                    <input type="text" class="form-control" id="formAllWordsInput" placeholder="all of these words." name="q">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formExactInput" class="form-label">Exact word or phrase:</label>
+                    <input type="text" class="form-control" id="formExactInput" placeholder="exact word or phrase." name="as_epq">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formAnyWordsInput" class="form-label">Any of these words:</label>
+                    <input type="text" class="form-control" id="formAnyWordsInput" placeholder="any of these words." name="as_oq">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formNoneWordsInput" class="form-label">None of these words:</label>
+                    <input type="text" class="form-control" id="formNoneWordsInput" placeholder="none of these words." name="as_eq">
+                  </div>
+                   <!-- <input type="submit" value="Google Search"> -->
+                   <button type="submit" class="btn btn-primary">Advanced Search</button>
+            </div>
         <!--https://www.google.com/search?as_q=test&as_epq=test2&as_oq=test3&as_eq=test4&as_nlo=1&as_nhi=10
             &lr=lang_en&cr=countryUS&as_qdr=d&as_sitesearch=test.org&as_occt=any&safe=images&as_filetype=&tbs=-->
-            <input type="submit" value="Google Search">
         </form>
     </body>
 </html>

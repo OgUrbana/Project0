@@ -1,3 +1,9 @@
-
+.btn {
+  background-color: #4d90fe;
+  color: white;
+  margin: auto;
+  display: block;
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
